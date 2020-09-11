@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/friends"
+        android:icon="@drawable/ic_group"
+        android:title="Fantacy">
+
+    </item>
+
+    <item
+        android:id="@+id/findfriends"
+        android:title="Medical"
+        android:icon="@drawable/ic_group">
+
+    </item>
+
+
+    <item
+        android:id="@+id/menuProfile"
+        android:title="Romance"
+        android:icon="@drawable/ic_person">
+
+    </item>
+
+    <item
+        android:id="@+id/menuAddNewPost"
+        android:title="Science"
+        android:icon="@drawable/ic_add_box">
+
+    </item>
+
+
+    <item
+        android:id="@+id/message"
+        android:orderInCategory="100"
+        android:title="Fiction"
+        android:icon="@drawable/ic_feedback"/>
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Classic Comic"
+        android:icon="@drawable/ic_settings"/>
+
+
+</menu>

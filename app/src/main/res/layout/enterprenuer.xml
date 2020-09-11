@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enterprnuer"
+            android:textFontWeight="40"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:text="fast lane for billionairs">
+
+            </Button>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:text="how to to become rich in three days">
+
+            </Button>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:text="think great and achieve great"
+                >
+
+            </Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>
