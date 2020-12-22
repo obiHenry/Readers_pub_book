@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RomanceActivity">
+
+    <include
+        layout="@layout/tool_bar_layout"
+        android:id="@+id/romanceToolbar">
+
+    </include>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/romanceProgressBar"
+        android:visibility="invisible"
+        android:layout_below="@+id/romanceToolbar"
+        android:layout_centerHorizontal="true">
+
+    </ProgressBar>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:text="Failed to Load please check your internet connection"
+        android:background="@drawable/edit_text_background"
+        android:layout_centerInParent="true"
+        android:id="@+id/romanceErrorMessage"
+        >
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/romanceToolbar"
+        android:layout_height="wrap_content"
+        android:id="@+id/romanceRecyclerview">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

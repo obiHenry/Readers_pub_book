@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classic"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/classicViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_classic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+
+        <include layout="@layout/view_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comic"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                tools:targetApi="p">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/comicViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_comic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+
+        <include layout="@layout/view_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fantasy"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/fantasyViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_fantasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+        <include layout="@layout/view_layout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fiction"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/fictionViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_fiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+        <include layout="@layout/view_layout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/historyViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+        <include layout="@layout/view_layout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/magical"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/magicalViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_magical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+        <include layout="@layout/view_layout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medical"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/medicalViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_medicals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+        <include layout="@layout/view_layout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/romance"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/romanceViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+
+        </LinearLayout>
+
+                <include layout="@layout/activity_romance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+        <include layout="@layout/view_layout" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/science"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textFontWeight="20"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:id="@+id/scienceViewAll"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="end">
+
+            </TextView>
+        </LinearLayout>
+
+                <include layout="@layout/activity_science"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </include>
+
+    </LinearLayout>
+
+
+</ScrollView>

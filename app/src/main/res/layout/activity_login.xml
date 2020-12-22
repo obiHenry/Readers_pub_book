@@ -4,16 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Activities.LoginActivity">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/good_night_img" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#fff"
-        android:layout_margin="20dp"
-        android:backgroundTint="#80FFFFFF"
-        android:backgroundTintMode="src_over">
+        android:text="Sign in"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff">
 
-    </androidx.cardview.widget.CardView>
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please sign in to continue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff">
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/emailAndPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/ic_email"
+            android:padding="10dp"
+            android:text="signIn with Email And Password"
+            android:background="@drawable/button_background"
+            android:elevation="7dp">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/googleAccount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="signIn with Google Account"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/ic_icons8_google"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_background"
+            android:elevation="7dp"
+            android:padding="10dp"
+            android:layout_below="@+id/emailAndPassword">
+
+        </Button>
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

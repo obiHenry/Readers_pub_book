@@ -3,5 +3,26 @@
     <string name="drawer_open">drawer_open</string>
     <string name="drawer_close">drawer_close</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="genres">Genres</string>
+    <string name="you_have_not_added_any_book_to_your_library_please_do_so_u_can_access_it_any_time">You have not added any book to your library please do so u can access it any time</string>
+    <string name="getImage">getImage</string>
+    <string name="book_title">book title</string>
+    <string name="home">Home</string>
+    <string name="my_library">My Library</string>
+    <string name="search">search</string>
+    <string name="classic">Classic</string>
+    <string name="comic">Comic</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="fiction">Fiction</string>
+    <string name="history">History</string>
+    <string name="magical">Magical</string>
+    <string name="medical">Medical</string>
+    <string name="romance">Romance</string>
+    <string name="science">Science</string>
+    <string name="book_description">book description</string>
+    <string name="book_cover_image">book cover image</string>
+    <string name="download_book_now">Read Now</string>
+    <string name="view_all"><![CDATA[View All >]]></string>
+
 
 </resources>

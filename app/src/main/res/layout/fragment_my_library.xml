@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_margin="10dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scienceProgressBar"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true">
+
+    </ProgressBar>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:gravity="center">
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="You have not added any book to your library please do so u can access it any time">
+            android:padding="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="You have not added any book to Your library please do to enjoy your stay here"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/Message"
+            >
 
         </TextView>
 
-
-        <GridView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:numColumns="2"
-            android:layout_marginStart="10dp">
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Add now"
+            android:visibility="invisible"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/goToHome"
+            >
 
-        </GridView>
-
-<!--        <include-->
-<!--            layout="@layout/histories"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-<!--        <include-->
-<!--            layout="@layout/bussiness"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-<!--        <include-->
-<!--            layout="@layout/enterprenuer"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"/>-->
+        </Button>
     </LinearLayout>
 
 
-</ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLibraryRecyclerview">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

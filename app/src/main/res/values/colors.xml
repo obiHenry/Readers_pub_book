@@ -5,4 +5,5 @@
     <color name="colorAccent">#e6a919</color>
     <color name="home">#c9379d</color>
     <color name="myLibrary">#e6a919</color>
+    <color name="textInputLayout">#e6a919</color>
 </resources>

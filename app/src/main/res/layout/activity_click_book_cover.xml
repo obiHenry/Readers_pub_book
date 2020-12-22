@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.ClickBookCoverActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/clickToolbar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        android:elevation="10dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/ic_science"
+            android:id="@+id/bookCover"
+            android:background="@drawable/round_outline"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/book_cover_image">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookDescription"
+        android:text="@string/book_description"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_weight="1.5"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/classicReadButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/download_book_now"
+            android:textAllCaps="false"
+            android:elevation="8dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_cloud_download_24"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            android:layout_weight="0.5">
+
+        </Button>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/addedLibraryButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Added"
+                android:textAllCaps="false"
+                android:elevation="8dp"
+                android:layout_marginStart="7dp"
+                android:drawableLeft="@drawable/ic_baseline_check_24"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:background="@drawable/button_background">
+
+            </Button>
+            <Button
+                android:id="@+id/addToLibrary"
+
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Add to Library"
+                android:textAllCaps="false"
+                android:elevation="8dp"
+                android:layout_marginStart="7dp"
+                android:drawableLeft="@drawable/ic_baseline_library_add_24"
+                android:textColor="#fff"
+                android:background="@drawable/button_background">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

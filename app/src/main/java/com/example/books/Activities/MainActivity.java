@@ -1,4 +1,4 @@
-package com.example.books;
+package com.example.books.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -7,11 +7,24 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.books.Activities.ClassicActivity;
+import com.example.books.Activities.ComicActivity;
+import com.example.books.Activities.FantasyActivity;
+import com.example.books.Activities.FictionActivity;
+import com.example.books.Activities.HistoryActivity;
+import com.example.books.Activities.MagicalActivity;
+import com.example.books.Activities.MedicalsActivity;
+import com.example.books.Activities.RomanceActivity;
+import com.example.books.Activities.ScienceActivity;
+import com.example.books.R;
 import com.example.books.fragments.HomeFragment;
 import com.example.books.fragments.MyLibraryFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -33,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView = findViewById(R.id.navigation);
         drawerLayout = findViewById(R.id.drawerLayout);
+        View navView = navigationView.inflateHeaderView(R.layout.headers_view);
+        TextView navHeading = (TextView)navView.findViewById(R.id.genres);
 
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.drawer_open,R.string.drawer_close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
@@ -74,28 +89,41 @@ public class MainActivity extends AppCompatActivity {
     public void PickItem(MenuItem menuItem){
         int id = menuItem.getItemId();
 
-        if (id == R.id.menuAddNewPost){
+        if (id == R.id.classic){
+            Intent intent = new Intent(this, ClassicActivity.class);
+            startActivity(intent);
 
+        }else if (id ==R.id.comic){
+            Intent intent = new Intent(this, ComicActivity.class);
+            startActivity(intent);
 
-        }else if (id == R.id.home){
+        }else if(id == R.id.fantasy){
+            Intent intent = new Intent(this, FantasyActivity.class);
+            startActivity(intent);
 
-        }else if (id ==R.id.findfriends){
+        }else if(id == R.id.fiction){
+            Intent intent = new Intent(this, FictionActivity.class);
+            startActivity(intent);
 
+        }else if (id == R.id.history) {
+            Intent intent = new Intent(this, HistoryActivity.class);
+            startActivity(intent);
 
-        }else if(id == R.id.friends){
+        }else if (id == R.id.magical){
+            Intent intent = new Intent(this, MagicalActivity.class);
+            startActivity(intent);
 
+        }else if (id == R.id.medicals){
+            Intent intent = new Intent(this, MedicalsActivity.class);
+            startActivity(intent);
 
+        }else if (id == R.id.romance){
+            Intent intent = new Intent(this, RomanceActivity.class);
+            startActivity(intent);
 
-        }else if(id == R.id.message){
-
-
-
-
-        }else if (id == R.id.action_settings) {
-
-
-        }else if (id == R.id.menuProfile){
-
+        }else if (id == R.id.science){
+            Intent intent = new Intent(this, ScienceActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -113,9 +141,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }else if (id == R.id.search) {
+       if (id == R.id.search) {
             Toast.makeText(this, "clicked", Toast.LENGTH_LONG).show();
 
         } else if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
